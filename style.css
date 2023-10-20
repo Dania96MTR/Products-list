@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: monospace;
+    outline: none;
+
+}
+body{
+    background-color: #e3e3e3;
+}
+h1{
+    color: #080808;
+    margin-bottom: 6px;
+}
+.product-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 180px;
+    left: 250px;
+}
+.product-data{
+    background-color: #0c0cb2;
+    border: 2px solid #08080833;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+span{
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    border: 2px solid #08080833;
+    font-size: 18px;
+    font-weight: 700;
+}
+.add-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #e3e3e3;
+    color: #080808;
+    /* padding: 10px 20px; 
+    margin-bottom: 5px;*/
+    font-size: 18px;
+
+
+}
+ .remove{
+    border: 2px solid #08080833;
+    padding: 10px 20px; 
+    margin-bottom: 5px;
+
+} 
+.the-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #e3e3e3;
+    color: #080808;
+    margin-bottom: 5px;
+}
+p{
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border: 2px solid #08080833;
+    font-size: 18px;
+    font-weight: 700;
+}
+.x{
+    background-color: #b90c0c;
+    color: #e3e3e3;
+    cursor: pointer;
+    width: 100%;
+}
+.no-item{
+    display: none;
+}
+.enter-data-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #080808;
+    margin-bottom: 5px;
+
+
+}
+input , button{
+    
+    border: none;
+    border: 2px solid #08080833;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e3e3e3;
+
+
+}
+
+.add{
+    color: white;
+    background-color: #0cb90c;
+    font-size: 18px;
+    font-weight: 700;
+}
+.total-price{
+    width: 100%;
+}
+.total{
+    color: #080808;
+    border: 2px solid #08080833;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+
+}
