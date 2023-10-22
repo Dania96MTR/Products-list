@@ -117,6 +117,8 @@ input , button{
     background-color: #0cb90c;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
+
 }
 .total-price{
     width: 100%;
