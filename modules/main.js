@@ -60,14 +60,3 @@ addProduct.addEventListener("click", (e) => {
 })
 
 
-/* function Sum(price){
-    let count = price
-    let sum = 0
-    count.map(ele =>{
-      sum += ele
-
-    })
-    total.innerHTML = count
-
-}
- */
