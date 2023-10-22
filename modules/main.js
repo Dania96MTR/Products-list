@@ -10,11 +10,13 @@ const noItem = document.querySelector(".no-item")
 const products = productsStorageHandler.getProductsFromLocalStorage()
 
 
-if(productsStorageHandler.getProductsFromLocalStorage()){
+if (productsStorageHandler.getProductsFromLocalStorage()) {
     products.map(product => {
         Addproduct(product)
+
     })
 }
+
 const createNewProduct = (title, price, id) => {
     const newProduct = new Product(title, price, id)
     console.log(newProduct.title)
@@ -23,7 +25,10 @@ const createNewProduct = (title, price, id) => {
     productsStorageHandler.addProductToLocalStorage(newProduct)
     Addproduct(newProduct)
 }
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+    if (enterPrice.value == "" || enterProduct.value == "") {
+        return
+    }
     createNewProduct(enterProduct.value, enterPrice.value, Date.now())
     enterPrice.value = ""
     enterProduct.value = ""
@@ -44,11 +49,25 @@ function Addproduct(product) {
     div.appendChild(p3)
     addProduct.appendChild(div)
 }
+
 addProduct.addEventListener("click", (e) => {
     const hasclass = e.target.classList.contains("x")
     if (hasclass) {
-        productsStorageHandler.deleteProductFromLocalStorage(e.target.parentElement.getAttribute("id")) 
+        productsStorageHandler.deleteProductFromLocalStorage(parseInt(e.target.parentElement.getAttribute("id")))
         e.target.parentElement.remove();
-      
+        
     }
 })
+
+
+/* function Sum(price){
+    let count = price
+    let sum = 0
+    count.map(ele =>{
+      sum += ele
+
+    })
+    total.innerHTML = count
+
+}
+ */

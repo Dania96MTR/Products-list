@@ -54,11 +54,7 @@ span{
     width: 100%;
     background-color: #e3e3e3;
     color: #080808;
-    /* padding: 10px 20px; 
-    margin-bottom: 5px;*/
     font-size: 18px;
-
-
 }
  .remove{
     border: 2px solid #08080833;
@@ -101,18 +97,13 @@ p{
     width: 100%;
     color: #080808;
     margin-bottom: 5px;
-
-
 }
 input , button{
-    
     border: none;
     border: 2px solid #08080833;
     width: 100%;
     padding: 10px 20px;
     background-color: #e3e3e3;
-
-
 }
 
 .add{
@@ -132,3 +123,96 @@ input , button{
     font-size: 18px;
 
 }
+
+@media screen and (min-width:200px) and (max-width:400px) {
+    h1{
+        font-size: 20px;
+    }
+    .product-list{
+        width: 80%;
+        top: 65px;
+        left: 24px;
+    }
+    span{
+        padding: 7px 2px;
+        font-size: 13px;
+    }
+     .remove{
+        border: 2px solid #08080833;
+        padding: 10px 20px; 
+        margin-bottom: 5px;
+    
+    } 
+    p{
+        padding: 7px 2px;
+        font-size: 13px;
+    }
+    input , button{
+        padding: 7px 2px;
+        font-size: 13px;
+    }
+    .total{
+        padding: 7px 10px;
+        font-size: 15px;
+    
+    }
+    
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    h1{
+        font-size: 25px;
+    }
+    .product-list{
+        width: 80%;
+        top: 65px;
+        left: 24px;
+    }
+    span{
+        padding: 7px 2px;
+        font-size: 18px;
+    }
+     .remove{
+        border: 2px solid #08080833;
+        padding: 10px 20px; 
+        margin-bottom: 5px;
+    
+    } 
+    p{
+        padding: 7px 2px;
+        font-size: 18px;
+    }
+    input , button{
+        padding: 7px 2px;
+        font-size: 15px;
+    }
+    .total{
+        padding: 7px 10px;
+        font-size: 16px;
+    
+    }
+    
+}
+ @media screen and (min-width:800px) and (max-width:1000px) {
+     h1{
+        font-size: 35px;
+    }
+    .product-list{
+        width: 80%;
+        top: 65px;
+        left: 76px;
+    }
+    span{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+     .remove{
+        border: 2px solid #08080833;
+        padding: 10px 20px; 
+        margin-bottom: 5px;
+    
+    } 
+    input , button{
+        font-size: 15px;
+    }
+    
+} 
