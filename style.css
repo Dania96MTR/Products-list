@@ -86,6 +86,12 @@ p{
     cursor: pointer;
     width: 100%;
 }
+.x:hover{
+    opacity: 0.8;
+}
+.add:hover{
+    opacity: 0.8;
+}
 .no-item{
     display: none;
 }
